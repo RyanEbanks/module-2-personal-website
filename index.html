@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e9533a5f65.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
         <li>
           <a href="#">Contact</a>
         </li>
-        <!--Placeholder for now, erase the names and solely have the icon-->
+        <!--i tag containing icons used from fontawesome-->
         <li>
           <i class="fa-brands fa-linkedin-in"></i>
         </li>
@@ -45,34 +45,50 @@
     </nav>
   </header>
 
-  <section class="background-img">
-    <img src="/assets/images/scrabble.png">
-    <!--Image with my profile photo saying Ryan Ebanks Full-Stack Web Developer-->
+  <section class="flex-container">
+
+    <article class="flex-child">
+      <h3>Who Am I?</h3>
+      <p>Hi, I'm Ryan Ebanks and have a BSc in Computer Science and I'm a Full-Stack Web Developer in training.</p>
+      <p>Let me show you what I can do!.</p>
+    </article>
+
+    <section class="flex-child">
+      <img class="icon-img" src="/assets/images/me-icon.png">
+      <!--Image with my profile photo saying Ryan Ebanks Full-Stack Web Developer-->
+    </section>
+
   </section>
-  <article class="about-me">
-    <h3>Who Am I?</h3>
-    <p>Hi, I'm Ryan Ebanks and have a BSc in Computer Science and I'm a Full-Stack Web Developer in training.
-       I'm currently looking for an opportunity to show my potential.</p>
-       <img src="/assets/images/placeholder.png">
-  </article>
-  <article class="skill-display">
-    <h3>Skillset</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
+
+  <section class="skillset-sec">
+    <h1>Skillset</h1>
+<section class="columns">
+  <article class="skill-container">
+    <h2 class="column-title">Frontend</h3>
+   <p class="mini-title">Languages:</p>
+   <p class="list">HTML</p>
+    <p class="list">CSS</p>
     <!--Include other skills like github and put that in like a gradient border underneath-->
   </article>
-  <article class="proj-display">
+  <article class="skill-container">
+    <h2 class="column-title">Dev Tools</h3>
+   <p class="mini-title">Such as:</p>
+   <p class="list">Github</p>
+    <!--Include other skills like github and put that in like a gradient border underneath-->
+  </article>
+</section>
+</section>
+
+  <article class="proj-container">
     <h3>Projects</h3>
     <!--Have these in borders and highlight/show a snippet when hovered over-->
-    <ul>
-      <li>Prework study guide Placeholder</li>
-      <li>Module 1 challenge Placeholder</li>
-      <li>CSS cheat snippets Placeholder</li>
+    <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"></a>
+    <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"></a>
+    <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"></a>
     </ul>
   </article>
-  <article class="contact-me">
+
+  <article class="contact-container">
     <h3>Get in Touch</h3>
     <form>
         <label for="fname">Name</label><br>
