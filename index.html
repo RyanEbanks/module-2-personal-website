@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e9533a5f65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/style.css">
     <title>Portfolio</title>
 </head>
@@ -61,6 +62,7 @@
   </section>
 
   <section class="skillset-sec">
+
     <h1>Skillset</h1>
 <section class="columns">
   <article class="skill-container">
@@ -77,29 +79,39 @@
     <!--Include other skills like github and put that in like a gradient border underneath-->
   </article>
 </section>
+
 </section>
 
-  <article class="proj-container">
-    <h3>Projects</h3>
-    <!--Have these in borders and highlight/show a snippet when hovered over-->
-    <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"></a>
-    <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"></a>
-    <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"></a>
-    </ul>
+<section id="project-section">
+    <h2 class="proj-title">Projects</h2>
+  <article class="project-img-container">
+   
+    <article class="proj-img">
+      <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img src="/assets/images/module-1.png" alt=""></a>
+    </article>
+
+    <article class="proj-img">
+      <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"><img src="/assets/images/css-cheat-snippets.PNG" alt=""></a>
+      </article>
+
+      <article class="proj-img">
+        <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"><img src="/assets/images/pre-work-guide.PNG" alt=""></a>
+        </article>
+    
   </article>
+</section> <!--Project Container End-->
 
   <article class="contact-container">
-    <h3>Get in Touch</h3>
-    <form>
-        <label for="fname">Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="email">email<span>(optional)</span></label><br>
-        <input type="text" id="email" name="email"><br>
-        <label for="message"></label><br>
-        <!--Make this message box bigger-->
-        <input type="text" id="message" name="message" placeholder="Additional Message..."><br>
-        <input type="submit" value="Send">
+    <h2 class="contact-title">Get in Touch</h2>
+    <form class>
+        <input type="text" id="fname" name="fname" placeholder="Name" class="form-info">
+        <input type="text" id="email" name="email" placeholder="Email" class="form-info">
+        <input type="text" id="message" name="message" placeholder="Additional Message..." class="form-info">
+        <input type="button" value="Send" class="contact-button form-info">
     </form>
   </article>
+  <footer>
+    <h2> Created by Ryan Ebanks</h2>
+  </footer>
 </body>
 </html>
