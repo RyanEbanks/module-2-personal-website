@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e9533a5f65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
   <!--Header Information-->
   <header>
     <nav class="nav-bar">
-      <h1>Ryan<span class="e-lio">Ebanks</span> Portfo<span class="e-lio">lio</span></h1>
+      <h1 class>Ryan<span class="e-lio">Ebanks</span> Portfo<span class="e-lio">lio</span></h1>
       <ul>
         <li>
           <a href="#">Home</a>
@@ -40,76 +42,162 @@
         </li>
         <!--Make this into a button-->
         <li>
-          <a href="#" class="btn">Download Resume here!</a>
+          <a href="#" class="btn">Resume</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <section class="flex-container">
+  <section class="about-container">
 
-    <article class="flex-child">
-      <h3>Who Am I?</h3>
-      <p>Hi, I'm Ryan Ebanks and have a BSc in Computer Science and I'm a Full-Stack Web Developer in training.</p>
-      <p>Let me show you what I can do!.</p>
+    <article class="about-child one">
+      <h1 class="about-title">Who Am I?</h1>
+      <p class="about-p">Hi I'm Ryan Ebanks, I have a BSc in Computer Science and I'm a Full-Stack Web Developer in training.</p>
+      <p class="about-p">Let me show you what I can do!.</p>
     </article>
 
-    <section class="flex-child">
+    <section class="about-child two">
       <img class="icon-img" src="/assets/images/me-icon.png">
       <!--Image with my profile photo saying Ryan Ebanks Full-Stack Web Developer-->
     </section>
 
   </section>
 
+  <!--Skill Container-->
   <section class="skillset-sec">
 
-    <h1>Skillset</h1>
+    <h1 class="skill-title">Skillset</h1>
 <section class="columns">
-  <article class="skill-container">
-    <h2 class="column-title">Frontend</h3>
-   <p class="mini-title">Languages:</p>
-   <p class="list">HTML</p>
-    <p class="list">CSS</p>
-    <!--Include other skills like github and put that in like a gradient border underneath-->
+
+  <article class="skill-container con-one">
+    <img src="/assets/images/languages.png">
+    <h2 class="column-title">Browser Based Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Responsive Design</li>
+      </ul>
+   <p class="mini-title">Technologies by the end of the course:</p>
+      <ul>
+        <li>JavaScript</li>
+        <li>Progressive Web Apps (PWAs)</li>
+        <li>Bootstrap</li>
+        <li>Local Storage, Session Storage, IndexedDB</li>
+        <li>React.js</li>
+        <li>jQuery</li>
+      </ul>
   </article>
-  <article class="skill-container">
-    <h2 class="column-title">Dev Tools</h3>
-   <p class="mini-title">Such as:</p>
-   <p class="list">Github</p>
-    <!--Include other skills like github and put that in like a gradient border underneath-->
+
+  <article class="skill-container con-two">
+    <img src="/assets/images/api.png">
+    <h2 class="column-title">API Design</h3>
+   <p class="mini-title">APIs by the end of the course:</p>
+      <ul>
+        <li>Client-Server Model</li>
+        <li>API</li>
+        <li>REST</li>
+        <li>JSON</li>
+        <li>AJAX (Fetch API)</li>
+        <li>HTTP request methods</li>
+        <li>GraphQL</li>
+      </ul>
   </article>
-</section>
+
+  <article class="skill-container con-three">
+    <img src="/assets/images/database.png">
+    <h2 class="column-title">Databases</h3>
+   <p class="mini-title">Databases by the end of the course:</p>
+      <ul>
+        <li>MSQL</li>
+        <li>MongoDB</li>
+      </ul>
+  </article>
+
+  <article class="skill-container con-4">
+    <img src="/assets/images/deployment.png">
+    <h2 class="column-title">Deployment & Delivery</h3>
+      <ul>
+        <li>Git</li>
+        <li>Github Pages</li>
+        <li>Shell Scripting</li>
+        <li>Continuous Integration</li>
+      </ul>
+   <p class="mini-title">Deployments by the end of the course:</p>
+      <ul>
+        <li>Heroku</li>
+        <li>Unit Testing</li>
+        <li>Linting</li>
+      </ul>
+  </article>
+
+  <article class="skill-container con-five">
+    <img src="/assets/images/server-deployment.png">
+    <h2 class="column-title">Server Side Development</h3>
+   <p class="mini-title">Server-Side technologies by the end of the course:</p>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>User Authentication</li>
+        <li>Template Engines</li>
+        <li>Mern Stack(MongoDB, Express/React/Node.js)</li>
+      </ul>
+  </article>
 
 </section>
 
+</section><!--Skill Container End-->
+
+<!--Project Container-->
 <section class="project-section">
     <h2 class="proj-title">Projects</h2>
   <article class="project-img-container">
    
+    <!--
     <article class="proj-img">
+      <h2 class="img-title">Horiseon Website</h2>
       <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img src="/assets/images/module-1.png" alt=""></a>
+    </article>
+  -->
+    <article class="proj-img">
+      <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img src="/assets/images/project 1 test.png" alt=""></a>
+      <h2 class="img-title">Horiseon Website</h2>
+      <article class="proj-btn">
+      <a href="#" class="btn">Github Link</a>
+      <a href="#" class="btn">Live Link</a>
+      </article>
+     
+      <h3>Skills Used:</h3>
+      <hr>
+      <p>HTML</p>
+      <hr>
+      <p>CSS</p>
     </article>
 
     <article class="proj-img">
+      <h2 class="img-title">CSS Cheat Snippet</h2>
       <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"><img src="/assets/images/css-cheat-snippets.PNG" alt=""></a>
       </article>
 
       <article class="proj-img">
+        <h2 class="img-title">Pre-work Study Guide</h2>
         <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"><img src="/assets/images/pre-work-guide.PNG" alt=""></a>
         </article>
     
   </article>
 </section> <!--Project Container End-->
 
+<!--Contact Container-->
   <article class="contact-container">
     <h2 class="contact-title">Get in Touch</h2>
 
+    <article class="contact-border">
+
       <form class="form-row">
-        <input type="text" id="fname" name="fname" placeholder="Name">
+        <input type="text" id="fname" name="fname" placeholder="Enter Name">
       </form>
 
       <form class="form-row">
-        <input type="text" id="email" name="email" placeholder="Email">
+        <input type="text" id="email" name="email" placeholder="Enter Email">
       </form>
 
       <form class="form-row">
@@ -119,7 +207,11 @@
       <form class="form-row contact-button">
         <input type="button" value="Send">
       </form>
-  </article>
+
+    </article>
+
+  </article><!--Contact Container End-->
+
 
   <footer>
     <h2> Created by Ryan Ebanks</h2>

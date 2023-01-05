@@ -2,39 +2,33 @@
 /*If you start to forget flexbox, you always have the css game & the YT video in your coding tips and tricks folder*/
 
 *{
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    background-color: var(--purple-background);
+}
 :root{
     --dark: #000;
-    --purple: #c22085;
-    --green: #2d9687;
-    --gold: #e2b8aa;
+    --purple-background: #7F00FF;
+    --purple-shade: #5900B3;
+    --purple-icon: #8C19FF;
+    --yellow: #FCFF00;
+    --yellow-shade: #B0B300;
     --white: #fff;
     --border: #e6ecf8;
-    --shadow: #191919;
+    --shadow: #191919;  
 }
 
+/* Its doing the same thing as the navbar
 header{
-    padding: 20px;
     background: var(--dark);
-    position: fixed;
+    position: relative;
     width: 100%;
 }
-
-header img{
-  
-    padding: 5px;
-    width: 50px;
-}
-
-header h1{
-    display: inline-block;
-}
-
-
+*/
 .e-lio{
-    color: blue;
+    color: var(--yellow);
 }
 
 body{
@@ -47,13 +41,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 0 8% 0 8%;
     /*box-sizing border box allows all the different divs to have border of the same size*/
     box-sizing: border-box;
     /*added right here*/
     border: solid;
     border-color: yellow;
+    position: relative;
+    width: 100%;
+    color: var(--white);
 }
 
 .nav-bar ul li{
@@ -68,39 +64,48 @@ body{
 }
 
 .btn{
-    background-color: var(--blue);
-    color: var(--dark);
+   /* Find a way to get this to work
+    color: var(--purple-shade);
+    */
+    background-color: var(--yellow-shade);
     text-decoration: none;
     border: solid;
-    border-color: var(--blue);
-    border-radius: 30px;
+    border-color: var(--white);
+    border-radius: 10px;
     padding: 10px;
 }
 
 /*Beginning of About Me section*/
 /*Put a border here to look at the size of the div (adjust later)*/
-.flex-container{
+.about-container{
   display: flex;
-  width: 80%;
   align-items: left;
   text-align: left;
-  justify-content: left;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  margin: 0 auto 10% auto;
+  padding-left: 5%;
   border: solid;
-    border-color: purple;
+  border-color: purple;
 }
 
-.flex-child{
+.about-child{
     flex: 4 auto;
     border: 2px solid black;
-    margin: 20% 0 20% 0;
+    margin: 2% 0 2% 0;
     border-spacing: 0;
     line-height: 1.5;
+    color: var(--white);
+    padding: auto auto auto 10%;
 }
 
-.flex-child h3 {
-    padding-top: 100px;
+.two{
+    /*Look at how this affected the flexbox*/
+    margin: 0 auto 0 auto;
+}
+
+.about-title{
+    font-size: 2.5rem;
+    color: var(--purple);
 }
 
 .icon-img{
@@ -113,47 +118,62 @@ body{
 .skillset-sec{
     border: solid;
     border-color: red;
+    background-color: var(--white);
+    padding: 2% 0 2% 0;
 }
-.skillset-sec h1{
+.skill-title{
     text-align: center;
-}
-
-.column-title{
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-decoration: underline var(--border);
+    padding: 0 0 2% 0;
+    color: var(--purple);
 }
 
 .columns{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border: 2px solid var(--border);
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     
 }
 
-.mini-title{
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+.skill-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding: auto;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: 10px;
+    margin: 6% 5% 6% 5%;
 }
 
-.list{
+.skill-container li{
+    list-style: none;
     text-align: center;
+
+}
+
+.skill-container img{
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-.skill-container{
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 4;
-    padding: 30px 0 30px 0;
+.column-title{
+    text-align: center;
+    text-decoration: underline var(--green);
+    color: var(--purple);
 }
+
+
+.mini-title{
+    text-align: center;
+    text-decoration: underline var(--green);
+    color: var(--purple);
+}
+
 
 /*Project Section*/
 /*Put a border here to look at the size of the div (adjust later)*/
@@ -163,43 +183,86 @@ body{
 }
 
 .proj-title{
-    margin-top: 20%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
+    color: white;
 }
 .project-img-container{
     display: flex;
     justify-content: center;
+    margin: 0 0 2% 0;
+    /*Remove background colour once your finished styling these*/
+    background-color: var(--white);
+    padding: 2% 0 2% 0;
+}
+
+.img-title{
+    text-align: center;
+    color: var(--purple-icon);
+    top: 0;
+    padding: 5px;
 }
 
 .proj-img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: 10px;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 0 0 0 0;
 }
 
 .proj-img img{
     flex-direction: row;
     height: auto;
     width: 400px;
-    transition: 1s;
+    transition: 1.25s;
     cursor: pointer;
 }
 
 .proj-img img:hover{
-    transform: scale(1.1);
+    transform: scale(1.3);
+    filter: blur(2.3px);
 }
+
+.proj-img h3, .proj-img p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Giving the hr tag a different color*/
+hr{
+    width: 80%;
+    background-color: var(--purple-background);
+    border: none;
+    height: 1px;
+}
+.proj-btn{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    padding: 0 0 20px 10px;
+}
+
 
 /*Contact Section*/
 /*Put a border here to look at the size of the div (adjust later)*/
 .contact-container{
     border: solid;
-    border-color: #000;
+    border-color: rgb(0, 225, 255);
+    padding: 2% 0 2% 0;
+    background-color: var(--white);
+}
+
+.contact-border{
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 2% 5% 2% 5%;
 }
 .contact-title{
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
 }
@@ -225,11 +288,10 @@ body{
 }
 
 /*Footer*/
-
 footer{
 /*Put a border here to look at the size of the div (adjust later)*/
 border: solid;
 border-color: green;
-padding: 8% 0 2% 0;
+padding: 2% 0 2% 0;
 text-align: center;
 }
