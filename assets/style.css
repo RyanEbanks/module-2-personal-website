@@ -2,19 +2,19 @@
 /*If you start to forget flexbox, you always have the css game & the YT video in your coding tips and tricks folder*/
 
 *{
-   font-family: 'Quicksand', sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 1.5;
 }
 
 body{
-    background-color: var(--purple-background);
+    background-color: var(--white);
 }
 :root{
     --dark: #000;
-    --purple-background: #7F00FF;
-    --purple-shade: #5900B3;
-    --purple-icon: #8C19FF;
-    --yellow: #FCFF00;
-    --yellow-shade: #B0B300;
+    --blue-highlight-text: #2776EA;
+    --darker-blue: #1F5CB8;
+    --light-blue: #2877EE;
+    --blue-shade: #32496B;
     --white: #fff;
     --border: #e6ecf8;
     --shadow: #191919;  
@@ -27,247 +27,233 @@ header{
     width: 100%;
 }
 */
-.e-lio{
-    color: var(--yellow);
+.e-lio {
+    color: var(--darker-blue);
 }
 
-body{
+body {
     margin: 0;
 }
 
 /*Beginning of navigation bar*/
-/*Put a border here to look at the size of the div (adjust later)*/
-.nav-bar{
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 8% 0 8%;
     /*box-sizing border box allows all the different divs to have border of the same size*/
     box-sizing: border-box;
-    /*added right here*/
-    border: solid;
-    border-color: yellow;
     position: relative;
     width: 100%;
-    color: var(--white);
+    margin-bottom: 5%;
 }
 
-.nav-bar ul li{
+.nav-bar ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
+    font-size: 1.25rem;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
     text-decoration: none;
-    color: var(--white);
 }
 
-.btn{
+.btn {
    /* Find a way to get this to work
     color: var(--purple-shade);
     */
-    background-color: var(--yellow-shade);
+    background-color: var(--darker-blue);
     text-decoration: none;
+    color: white;
     border: solid;
-    border-color: var(--white);
-    border-radius: 10px;
+    border-color: transparent;
+    border-radius: 3px;
     padding: 10px;
+    margin-left: 5px;
 }
 
 /*Beginning of About Me section*/
 /*Put a border here to look at the size of the div (adjust later)*/
-.about-container{
-  display: flex;
-  align-items: left;
-  text-align: left;
-  justify-content: center;
-  margin: 0 auto 10% auto;
-  padding-left: 5%;
-  border: solid;
-  border-color: purple;
+.about-grid-container {
+  display: grid;
+  grid-gap: 20px;
+  /*grid-template-columns: 50vw 50vw;
+  grid-auto-rows: minmax(150px, auto);*/
+  grid-template-areas: "a a a a a a a b b c c d d d d d d d";
+  margin-bottom: 5%;
 }
 
-.about-child{
-    flex: 4 auto;
-    border: 2px solid black;
-    margin: 2% 0 2% 0;
-    border-spacing: 0;
+.about-child {
     line-height: 1.5;
-    color: var(--white);
-    padding: auto auto auto 10%;
 }
 
-.two{
-    /*Look at how this affected the flexbox*/
-    margin: 0 auto 0 auto;
+.grid-item-1 {
+   grid-area: b;
 }
 
-.about-title{
-    font-size: 2.5rem;
+.grid-item-2 {
+    grid-area: c;
+}
+
+.about-info {
+    font-size: 1.5rem;
+}
+
+.about-title {
+    font-size: 2rem;
     color: var(--purple);
 }
 
-.icon-img{
+.icon-img {
     width: 400px;
     height: auto;
 }
 
 /*Skillset Section*/
 /*Put a border here to look at the size of the div (adjust later)*/
-.skillset-sec{
-    border: solid;
-    border-color: red;
-    background-color: var(--white);
-    padding: 2% 0 2% 0;
-}
-.skill-title{
-    text-align: center;
-    padding: 0 0 2% 0;
-    color: var(--purple);
+.skill-parent-container {
+   display: flex;
+   margin-top: 50px;
+   align-items: center;
+   text-align: center;
+   background: var(--darker-blue);
 }
 
-.columns{
+.skill-child-container1 {
+   flex: 60%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.skill-child-container2 {
+    flex: 40%;
+}
+
+.skill-title {
+   /*Need to do more aligning*/
+}
+
+.language-icons1 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 2px solid var(--border);
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
     
 }
 
-.skill-container{
+.language-icons2 {
+    display: flex;
+    justify-content: center;
+}
+
+.parent_div{
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-items {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 200px;
     padding: auto;
+    background: var(--light-blue);
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: 10px;
     margin: 6% 5% 6% 5%;
 }
 
-.skill-container li{
-    list-style: none;
-    text-align: center;
-
-}
-
-.skill-container img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.column-title{
-    text-align: center;
-    text-decoration: underline var(--green);
-    color: var(--purple);
-}
-
-
-.mini-title{
-    text-align: center;
-    text-decoration: underline var(--green);
-    color: var(--purple);
-}
-
-
 /*Project Section*/
-/*Put a border here to look at the size of the div (adjust later)*/
-.project-section{
-    border: solid;
-    border-color: blue;
-}
-
-.proj-title{
+.proj-title {
     margin-top: 2%;
-    margin-bottom: 2%;
     text-align: center;
-    color: white;
 }
-.project-img-container{
+.proj-img-container {
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 0 2% 0;
+    margin: 0 auto 5% auto;
     /*Remove background colour once your finished styling these*/
     background-color: var(--white);
     padding: 2% 0 2% 0;
 }
 
-.img-title{
-    text-align: center;
-    color: var(--purple-icon);
-    top: 0;
-    padding: 5px;
+.first-container {
+    margin-bottom: 0%;
 }
 
-.proj-img{
+.the-project img {
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+    transition: 1.25s;
+    cursor: pointer;
+}
+
+.the-project {
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin: auto;
     padding: 0 0 0 0;
 }
 
-.proj-img img{
-    flex-direction: row;
-    height: auto;
-    width: 400px;
-    transition: 1.25s;
-    cursor: pointer;
+.first-project, .first-project img {
+    width: 800px;
 }
 
-.proj-img img:hover{
+.img-title {
+    color: var(--blue-highlight-text);
+    top: 0;
+}
+
+.the-project img:hover {
     transform: scale(1.3);
     filter: blur(2.3px);
 }
 
-.proj-img h3, .proj-img p{
-    text-align: center;
-    font-weight: bold;
+.img-p {
+    color: var(--blue-shade);
+    padding-bottom: 10px;
+}
+.img-title, .img-p {
+    padding-left: 5px;
 }
 
 /*Giving the hr tag a different color*/
-hr{
+hr {
     width: 80%;
-    background-color: var(--purple-background);
+    background-color: var(--blue-shade);
     border: none;
     height: 1px;
 }
-.proj-btn{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    text-align: center;
-    padding: 0 0 20px 10px;
-}
+
 
 
 /*Contact Section*/
 /*Put a border here to look at the size of the div (adjust later)*/
-.contact-container{
-    border: solid;
-    border-color: rgb(0, 225, 255);
+.contact-container {
     padding: 2% 0 2% 0;
-    background-color: var(--white);
+    background: var(--darker-blue);
 }
 
-.contact-border{
+.contact-border {
+    background: var(--white);
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: 10px;
     margin: 30px;
     padding: 2% 5% 2% 5%;
 }
-.contact-title{
+.contact-title {
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
 }
 
-.form-row{
+.form-row {
    width: 50%;
    padding: 10px 0;
    display: flex;
@@ -276,22 +262,20 @@ hr{
 
 }
 
-.form-row input{
+.form-row input {
     /*setting all the flex-boxes to the same size in the container, since they share the same class name I only need to do it once*/
     flex: 1;
 }
 
-.contact-button{
+.contact-button {
     margin-top: 1.5%;
     align-items: center;
     width: 10%;
 }
 
 /*Footer*/
-footer{
-/*Put a border here to look at the size of the div (adjust later)*/
-border: solid;
-border-color: green;
-padding: 2% 0 2% 0;
-text-align: center;
+footer {
+    background: var(--blue-shade);
+    padding: 2% 0 2% 0;
+    text-align: center;
 }

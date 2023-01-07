@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e9533a5f65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e9533a5f65.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
+
 <body>
 
   <!--Header Information-->
@@ -48,145 +50,199 @@
     </nav>
   </header>
 
-  <section class="about-container">
+  <section class="about-grid-container">
 
-    <article class="about-child one">
+    <article class="about-child grid-item-1">
       <h1 class="about-title">Who Am I?</h1>
-      <p class="about-p">Hi I'm Ryan Ebanks, I have a BSc in Computer Science and I'm a Full-Stack Web Developer in training.</p>
-      <p class="about-p">Let me show you what I can do!.</p>
+      <p class="about-info">Hi, I'm Ryan Ebanks and I'm a Full-Stack Web Developer in training.
+        I have a bachelors degree in computer science which gives me a strong understanding
+        of programming funadamentals such as data structures and object-oriented programming (OOPs).
+        I'm orginally from Jamaica but now live in the USA which gives me a unique perspective in the way I think as
+        well as my creative approach.
+        I'm currently enrolled in the Rutgers Full-Stack Coding Bootcamp to harness my skills.
+      </p>
+      <p class="about-info">Let me show you what I can do!.</p>
     </article>
 
-    <section class="about-child two">
-      <img class="icon-img" src="/assets/images/me-icon.png">
-      <!--Image with my profile photo saying Ryan Ebanks Full-Stack Web Developer-->
+    <section class="about-child grid-item-2">
+      <img class="icon-img" src="/assets/images/profile-picture.png">
     </section>
 
   </section>
 
   <!--Skill Container-->
-  <section class="skillset-sec">
-
-    <h1 class="skill-title">Skillset</h1>
-<section class="columns">
-
-  <article class="skill-container con-one">
-    <img src="/assets/images/languages.png">
-    <h2 class="column-title">Browser Based Technologies</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Responsive Design</li>
-      </ul>
-   <p class="mini-title">Technologies by the end of the course:</p>
-      <ul>
-        <li>JavaScript</li>
-        <li>Progressive Web Apps (PWAs)</li>
-        <li>Bootstrap</li>
-        <li>Local Storage, Session Storage, IndexedDB</li>
-        <li>React.js</li>
-        <li>jQuery</li>
-      </ul>
-  </article>
-
-  <article class="skill-container con-two">
-    <img src="/assets/images/api.png">
-    <h2 class="column-title">API Design</h3>
-   <p class="mini-title">APIs by the end of the course:</p>
-      <ul>
-        <li>Client-Server Model</li>
-        <li>API</li>
-        <li>REST</li>
-        <li>JSON</li>
-        <li>AJAX (Fetch API)</li>
-        <li>HTTP request methods</li>
-        <li>GraphQL</li>
-      </ul>
-  </article>
-
-  <article class="skill-container con-three">
-    <img src="/assets/images/database.png">
-    <h2 class="column-title">Databases</h3>
-   <p class="mini-title">Databases by the end of the course:</p>
-      <ul>
-        <li>MSQL</li>
-        <li>MongoDB</li>
-      </ul>
-  </article>
-
-  <article class="skill-container con-4">
-    <img src="/assets/images/deployment.png">
-    <h2 class="column-title">Deployment & Delivery</h3>
-      <ul>
-        <li>Git</li>
-        <li>Github Pages</li>
-        <li>Shell Scripting</li>
-        <li>Continuous Integration</li>
-      </ul>
-   <p class="mini-title">Deployments by the end of the course:</p>
-      <ul>
-        <li>Heroku</li>
-        <li>Unit Testing</li>
-        <li>Linting</li>
-      </ul>
-  </article>
-
-  <article class="skill-container con-five">
-    <img src="/assets/images/server-deployment.png">
-    <h2 class="column-title">Server Side Development</h3>
-   <p class="mini-title">Server-Side technologies by the end of the course:</p>
-      <ul>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>User Authentication</li>
-        <li>Template Engines</li>
-        <li>Mern Stack(MongoDB, Express/React/Node.js)</li>
-      </ul>
-  </article>
-
-</section>
-
-</section><!--Skill Container End-->
-
-<!--Project Container-->
-<section class="project-section">
-    <h2 class="proj-title">Projects</h2>
-  <article class="project-img-container">
-   
-    <!--
-    <article class="proj-img">
-      <h2 class="img-title">Horiseon Website</h2>
-      <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img src="/assets/images/module-1.png" alt=""></a>
-    </article>
-  -->
-    <article class="proj-img">
-      <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img src="/assets/images/project 1 test.png" alt=""></a>
-      <h2 class="img-title">Horiseon Website</h2>
-      <article class="proj-btn">
-      <a href="#" class="btn">Github Link</a>
-      <a href="#" class="btn">Live Link</a>
-      </article>
-     
-      <h3>Skills Used:</h3>
-      <hr>
-      <p>HTML</p>
-      <hr>
-      <p>CSS</p>
+  <section class="skill-parent-container">
+    <article class="skill-child-container1">
+      <h1 class="skill-title">Skillset</h1>
+      <p class="skill-info">The Rutgers Coding Bootcamp has fully equipped me with the necessary knowledge and
+        technologies that a web developer needs.</p>
+      <p class="skill-info">With these tools I will be able to craft beautiful front-end designs and maintain back-end
+        development processes.</p>
     </article>
 
-    <article class="proj-img">
-      <h2 class="img-title">CSS Cheat Snippet</h2>
-      <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"><img src="/assets/images/css-cheat-snippets.PNG" alt=""></a>
-      </article>
-
-      <article class="proj-img">
-        <h2 class="img-title">Pre-work Study Guide</h2>
-        <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"><img src="/assets/images/pre-work-guide.PNG" alt=""></a>
+    <article class="skill-child-container2">
+      <section class="language-icons1">
+        <article class="skill-items">
+          <!--Creating a Vector icons using svg (used svgviewer.dev to get specifications) Set width and height myself-->
+          <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" role="img"
+            viewBox="0 0 512 512">
+            <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52" />
+            <path fill="#ef652a" d="M256 472l149-41 35-394H256" />
+            <path fill="#ebebeb" d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z" />
+            <path fill="#fff" d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" />
+          </svg>
+          <h4>HTML5</h4>
         </article>
-    
-  </article>
-</section> <!--Project Container End-->
 
-<!--Contact Container-->
+        <article class="skill-items">
+
+          <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img"
+            viewBox="0 0 512 512">
+            <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52" />
+            <path fill="#2965f1" d="M256 37V472l149-41 35-394" />
+            <path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382" />
+            <path fill="#fff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z" />
+          </svg>
+          <h4>CSS3</h4>
+        </article>
+
+        <article class="skill-items">
+
+          <svg width="70" height="70" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
+              <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 
+          102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 
+          L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 
+          C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+              <path
+                d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 
+          C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 
+          L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 
+          194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 
+          201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 
+          187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 
+          C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
+                fill="#000000"></path>
+            </g>
+          </svg>
+          <h4>Javascript</h4>
+        </article>
+      </section>
+
+      <article class="language-icons2">
+        <article class="skill-items">
+
+          <svg width="70px" height="70px" viewBox="0 -20.234 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path d="M41.832 10.176C40.301 10.176 39.161 10.927 39.161 12.736C39.161 14.098 39.912 15.044 41.749 15.044C43.306 
+          15.044 44.363 14.127 44.363 12.679C44.363 11.039 43.417 10.176 41.832 10.176L41.832 10.176L41.832 10.176ZM38.772 22.946C38.41 23.39 38.049 23.862 
+          38.049 24.419C38.049 25.531 39.467 25.866 41.414 25.866C43.028 25.866 45.226 25.753 45.226 24.253C45.226 23.361 44.168 23.306 42.832 23.222L38.772 
+          22.946L38.772 22.946ZM47.006 10.26C47.506 10.9 48.035 11.79 48.035 13.07C48.035 16.157 45.615 17.965 42.111 17.965C41.219 17.965 40.413 17.854 39.912 
+          17.715L38.994 19.189L41.72 19.356C46.533 19.663 49.369 19.802 49.369 23.5C49.369 26.7 46.561 28.507 41.72 28.507C36.685 28.507 34.766 27.228 34.766 
+          25.03C34.766 23.778 35.322 23.112 36.296 22.193C35.377 21.805 35.072 21.109 35.072 20.358C35.072 19.745 35.377 19.189 35.879 18.66C36.38 18.133 36.936 
+          17.603 37.603 16.991C36.241 16.324 35.211 14.877 35.211 12.818C35.211 9.62 37.325 7.423 41.581 7.423C42.777 7.423 43.501 7.533 44.141 7.701L49.565 
+          7.701L49.565 10.065L47.006 10.26L47.006 10.26Z" fill="#2F2707" />
+              <path d="M54.459 5.205C52.873 5.205 51.956 4.286 51.956 2.7C51.956 1.116 52.873 0.253 54.459 0.253C56.073 0.253 56.991 1.116 56.991 2.7C56.991 4.286 
+          56.073 5.205 54.459 5.205L54.459 5.205L54.459 5.205ZM50.87 21.922L50.87 19.725L52.289 19.531C52.679 19.475 52.734 19.392 52.734 18.974L52.734 10.795C52.734 
+          10.49 52.651 10.294 52.372 10.212L50.87 9.683L51.176 7.43L56.935 7.43L56.935 18.974C56.935 19.42 56.962 19.475 57.38 19.531L58.799 19.725L58.799 21.922L50.87 
+          21.922L50.87 21.922Z" fill="#2F2707" />
+              <path d="M69.8 20.843C68.603 21.427 66.851 21.956 65.264 21.956C61.954 21.956 60.703 20.622 60.703 17.477L60.703 
+          10.189C60.703 10.022 60.703 9.911 60.479 9.911L58.532 9.911L58.532 7.435C60.981 7.156 61.954 5.932 62.26 2.9L64.903 2.9L64.903 6.851C64.903 7.045 64.903 
+          7.129 65.126 7.129L69.048 7.129L69.048 9.911L64.903 9.911L64.903 16.559C64.903 18.2 65.293 18.84 66.794 18.84C67.574 18.84 68.38 18.645 69.048 
+          18.395L69.8 20.843" fill="#2F2707" />
+              <path
+                d="M28.582 13.543L15.863 0.825C15.131 0.092 13.943 0.092 13.21 0.825L10.569 3.466L13.919 6.817C14.698 6.553 
+          15.591 6.73 16.211 7.351C16.835 7.975 17.01 8.876 16.741 9.657L19.969 12.886C20.751 12.617 21.652 12.791 22.276 13.416C23.148 14.287 23.148 15.7 22.276 
+          16.572C21.404 17.445 19.991 17.445 19.118 16.572C18.462 15.916 18.3 14.953 18.632 14.144L15.621 11.133L15.621 19.058C15.833 19.163 16.034 19.303 16.211 
+          19.48C17.083 20.351 17.083 21.764 16.211 22.637C15.339 23.509 13.926 23.509 13.055 22.637C12.183 21.764 12.183 20.351 13.055 19.48C13.27 19.265 13.519 
+          19.102 13.785 18.993L13.785 10.994C13.519 10.886 13.27 10.724 13.055 10.507C12.394 9.848 12.235 8.878 12.573 8.067L9.271 4.764L0.55 13.484C-0.183 14.218 
+          -0.183 15.406 0.55 16.138L13.269 28.857C14.001 29.59 15.189 29.59 15.922 28.857L28.582 16.197C29.315 15.465 29.315 14.276 28.582 13.543"
+                fill="#DE4C36" />
+            </g>
+          </svg>
+          <h4>Git</h4>
+        </article>
+
+
+        <article class="skill-items">
+          <svg width="70px" height="70px" viewBox="0 -0.82 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+              <path
+                d="M35 0C15.673 0 0 15.67 0 35C0 50.464 10.029 63.584 23.935 68.212C25.685 68.536 26.327 67.453 26.327 66.528C26.327 
+          65.694 26.294 62.937 26.279 60.012C16.542 62.129 14.487 55.882 14.487 55.882C12.895 51.837 10.601 50.761 10.601 50.761C7.426 48.589 10.841 48.633 10.841 
+          48.633C14.355 48.88 16.206 52.24 16.206 52.24C19.328 57.591 24.394 56.044 26.391 55.15C26.705 52.888 27.612 51.344 28.613 50.47C20.839 49.585 12.667 
+          46.583 12.667 33.172C12.667 29.351 14.034 26.229 16.273 23.778C15.91 22.896 14.712 19.336 16.612 14.515C16.612 14.515 19.551 13.575 26.24 18.103C29.032 
+          17.327 32.026 16.939 35 16.925C37.975 16.939 40.971 17.327 43.768 18.103C50.449 13.575 53.384 14.515 53.384 14.515C55.289 19.336 54.09 22.896 53.727 
+          23.778C55.971 26.229 57.329 29.351 57.329 33.172C57.329 46.615 49.141 49.575 41.347 50.442C42.603 51.528 43.721 53.658 43.721 56.923C43.721 61.606 43.681 
+          65.375 43.681 66.528C43.681 67.46 44.311 68.551 46.085 68.207C59.984 63.574 70 50.459 70 35C70 15.67 54.33 0 35 0ZM13.109 49.859C13.032 50.033 12.758 50.085 
+          12.509 49.965C12.255 49.851 12.112 49.614 12.195 49.44C12.27 49.261 12.544 49.211 12.798 49.331C13.052 49.445 13.197 49.684 13.109 49.859ZM14.83 51.395C14.663 
+          51.55 14.337 51.478 14.116 51.233C13.887 50.989 13.844 50.663 14.013 50.506C14.185 50.351 14.502 50.423 14.731 50.667C14.96 50.914 15.005 51.238 14.83 
+          51.395ZM16.011 53.36C15.797 53.509 15.446 53.37 15.23 53.058C15.015 52.747 15.015 52.374 15.234 52.224C15.452 52.075 15.797 52.209 16.017 52.518C16.231 
+          52.835 16.231 53.208 16.011 53.36ZM18.009 55.637C17.817 55.848 17.409 55.791 17.109 55.503C16.803 55.221 16.718 54.82 16.911 54.608C17.105 54.396 17.516 
+          54.456 17.817 54.742C18.121 55.024 18.214 55.427 18.009 55.637ZM20.591 56.405C20.506 56.679 20.112 56.804 19.716 56.687C19.32 56.567 19.061 56.246 19.141 
+          55.969C19.223 55.693 19.619 55.564 20.018 55.688C20.413 55.808 20.673 56.126 20.591 56.405ZM23.528 56.731C23.538 57.02 23.202 57.259 22.786 57.264C22.368 
+          57.274 22.029 57.04 22.024 56.756C22.024 56.464 22.353 56.227 22.772 56.22C23.188 56.212 23.528 56.444 23.528 56.731ZM26.415 56.62C26.464 56.902 26.175 57.191 
+          25.762 57.268C25.356 57.343 24.98 57.169 24.928 56.889C24.878 56.601 25.172 56.312 25.578 56.237C25.992 56.165 26.362 56.334 26.415 56.62Z"
+                fill="#161614" />
+            </g>
+          </svg>
+          <h4>Github</h4>
+        </article>
+      </article>
+    </article>
+  </section>
+  </section><!--Skill Container End-->
+
+  <!--Project Container-->
+
+  <article class="project-container">
+
+    <h2 class="proj-title">Projects</h2>
+    <hr>
+    <article class="proj-img-container first-container">
+
+      <article class="the-project first-project">
+        <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img
+            src="/assets/images/project 1 test.png" alt=""></a>
+        <h2 class="img-title">Horiseon Website Project</h2>
+        <p class="img-p">Hover for More info</p>
+        <a href="#" class="btn">Github Link</a>
+        <a href="#" class="btn">Live Link</a>
+        <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
+      </article>
+
+    </article>
+
+    <article class="proj-img-container">
+
+      <article class="the-project">
+        <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"><img
+            src="/assets/images/css-cheat-snippets.PNG" alt=""></a>
+        <h2 class="img-title">CSS Cheat Snippet Project</h2>
+        <p class="img-p">Hover for More info</p>
+        <a href="#" class="btn">Github Link</a>
+        <a href="#" class="btn">Live Link</a>
+        <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
+      </article>
+
+      <article class="the-project">
+        <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"><img
+            src="/assets/images/pre-work-guide.PNG" alt=""></a>
+        <h2 class="img-title">Pre-work Study Guide Project</h2>
+        <p class="img-p">Hover for More info</p>
+        <a href="#" class="btn">Github Link</a>
+        <a href="#" class="btn">Live Link</a>
+        <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
+      </article>
+    </article>
+
+  </article> <!--Project Container End-->
+
+  <!--Contact Container-->
   <article class="contact-container">
     <h2 class="contact-title">Get in Touch</h2>
 
@@ -218,4 +274,5 @@
   </footer>
 
 </body>
+
 </html>
