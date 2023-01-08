@@ -356,10 +356,6 @@ footer {
         margin-left: 1px;
     }
 
-    .home-banner {
-        padding-top: 10%;
-    }
-
     .about-info,
     .skill-info,
     .img-p,
@@ -369,7 +365,8 @@ footer {
 
     .icon-img {
         width: 300px;
-        padding-top: 15%;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .the-project img {
@@ -401,8 +398,6 @@ footer {
         padding: 2px;
         margin-left: 1px;
     }
-
-  
 
     .about-info,
     .skill-info,
