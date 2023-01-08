@@ -131,8 +131,14 @@ body {
 }
 
 .skill-title {
-   /*Need to do more aligning*/
+   font-size: 2rem;
+   color: var(--white);
 }
+
+.skill-info {
+    font-size: 1.5rem;
+}
+
 
 .language-icons1 {
     display: flex;
