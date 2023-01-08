@@ -1,24 +1,13 @@
-/*Things to add
-1.Resume link
-2.Nav Bar Highlights
-3.My email in contact info
-4.Pop-up Bar
-5.Media Queries!!!
-6.Deploy CSS cheat snippets and fix links
-7.Remove link from images
-*/
-
-
-*{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   line-height: 1.5;
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
 
-body{
+body {
     background-color: var(--white);
 }
 
-:root{
+:root {
     --dark: #000;
     --blue-highlight-text: #2776EA;
     --darker-blue: #1F5CB8;
@@ -26,16 +15,9 @@ body{
     --blue-shade: #32496B;
     --white: #fff;
     --border: #e6ecf8;
-    --shadow: #191919;  
+    --shadow: #191919;
 }
 
-/* Its doing the same thing as the navbar
-header{
-    background: var(--dark);
-    position: relative;
-    width: 100%;
-}
-*/
 .e-lio {
     color: var(--darker-blue);
 }
@@ -50,11 +32,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 8% 0 8%;
-    /*box-sizing border box allows all the different divs to have border of the same size*/
+/*box-sizing border box allows all the different divs to have border of the same size*/
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
     width: 100%;
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
 }
 
 .nav-bar ul li {
@@ -68,10 +51,17 @@ body {
     text-decoration: none;
 }
 
+
+header a:hover {
+    background-color: var(--darker-blue);
+    color: var(--white);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border-color: var(--darker-blue);
+}
+
 .btn {
-   /* Find a way to get this to work
-    color: var(--purple-shade);
-    */
     background-color: var(--darker-blue);
     text-decoration: none;
     color: white;
@@ -89,20 +79,21 @@ body {
     outline-offset: 15px;
     text-shadow: 1px 1px 2px var(--blue-shade);
 }
+
 /*Home Section*/
 .home-banner {
     display: flex;
 
 }
 
-.home-banner img{
+.home-banner img {
     justify-content: center;
     width: 100%;
 }
+
 /*Beginning of About Me section*/
-/*Put a border here to look at the size of the div (adjust later)*/
 .about-grid-container {
-  display: flex;
+    display: flex;
 }
 
 .about-child-one {
@@ -142,19 +133,18 @@ body {
 }
 
 /*Skillset Section*/
-/*Put a border here to look at the size of the div (adjust later)*/
 .skill-parent-container {
-   display: flex;
-   margin-top: 50px;
-   align-items: center;
-   text-align: center;
-   background: var(--darker-blue);
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    background: var(--darker-blue);
 }
 
 .skill-child-container1 {
-   flex: 60%;
-   margin-left: 5%;
-   margin-right: 5%;
+    flex: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .skill-child-container2 {
@@ -162,9 +152,9 @@ body {
 }
 
 .skill-title {
-   font-size: 2rem;
-   color: var(--white);
-   text-shadow: 2px 2px 3px var(--blue-shade);
+    font-size: 2rem;
+    color: var(--white);
+    text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
 .skill-info {
@@ -188,7 +178,7 @@ body {
     text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
-.parent_div{
+.parent_div {
     display: flex;
     margin-top: 50px;
     border: 1px solid black;
@@ -205,7 +195,7 @@ body {
     width: 200px;
     padding: auto;
     background: var(--light-blue);
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius: 10px;
     margin: 6% 5% 6% 5%;
 }
@@ -225,8 +215,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto 5% auto;
-    /*Remove background colour once your finished styling these*/
-    background-color: var(--white);
     padding: 2% 0 2% 0;
 }
 
@@ -241,14 +229,15 @@ body {
 }
 
 .the-project {
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius: 5px;
     overflow: hidden;
     margin: auto;
     padding: 0 0 0 0;
 }
 
-.first-project, .first-project img {
+.first-project,
+.first-project img {
     width: 800px;
 }
 
@@ -257,9 +246,37 @@ body {
     top: 0;
 }
 
-.the-project:hover {
+.project-1:hover::after {
+    content: "The aim of this project is to assess my ability to refactor existing code to the horiseon website to make it more accessible which is a common task for front-end and junior developers.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.project-2:hover::after {
+    content: "This is a cheat snippet holding code for flex properties in css to use on the go.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.project-3:hover::after {
+    content: "This study guide was created for myself as I go through the Rutgers boot camp Prework. It contains notes/tips on HTML, CSS, Git and JavaScript.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.the-project img:hover {
     transition: 1.2s;
-    transform: scale(1.1);
+    transform: scale(0.8);
+    filter: blur(3px);
     cursor: pointer;
 }
 
@@ -267,12 +284,13 @@ body {
     color: var(--blue-shade);
     padding-bottom: 10px;
 }
-.img-title, .img-p {
+
+.img-title,
+.img-p {
     padding-left: 5px;
 }
 
 /*Contact Section*/
-/*Put a border here to look at the size of the div (adjust later)*/
 .contact-container {
     padding: 2% 0 2% 0;
     background: var(--darker-blue);
@@ -280,11 +298,12 @@ body {
 
 .contact-border {
     background: var(--white);
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius: 10px;
     margin: 30px;
     padding: 2% 5% 2% 5%;
 }
+
 .contact-title {
     margin-top: 2%;
     margin-bottom: 2%;
@@ -293,11 +312,11 @@ body {
 }
 
 .form-row {
-   width: 50%;
-   padding: 10px 0;
-   display: flex;
-   margin-left: auto;
-   margin-right: auto;
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -317,8 +336,107 @@ footer {
     background: var(--blue-shade);
     padding: 1% 0 1% 0;
     text-align: center;
-    font-size: 1rem;
     color: var(--white);
     text-shadow: 2px 2px 3px var(--darker-blue);
 }
 
+.footer-title {
+    font-size: 1rem;
+}
+
+/*Adding Media Queries*/
+@media screen and (max-width: 992px) {
+    .nav-bar ul li a {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 2px;
+        margin-left: 1px;
+    }
+
+    .home-banner {
+        padding-top: 10%;
+    }
+
+    .about-info,
+    .skill-info,
+    .img-p,
+    .icon-title {
+        font-size: 0.95rem;
+    }
+
+    .icon-img {
+        width: 300px;
+        padding-top: 15%;
+    }
+
+    .the-project img {
+        width: 350px;
+    }
+
+    .first-project,
+    .first-project img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar ul li a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+    .nav-logo,
+    .about-title,
+    .skill-title,
+    .img-title,
+    .contact-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 2px;
+        margin-left: 1px;
+    }
+
+    .home-banner {
+        padding-top: 45%;
+    }
+
+    .about-info,
+    .skill-info,
+    .img-p,
+    .icon-title {
+        font-size: 0.8rem;
+    }
+
+    .icon-img {
+        width: 200px;
+        padding-top: 50%;
+    }
+
+    .the-project img {
+        width: 350px;
+    }
+
+    .first-project,
+    .first-project img {
+        width: 400px;
+    }
+
+    .project-1:hover::after,
+    .project-2:hover::after,
+    .project-3:hover::after {
+        right: 0;
+        bottom: 1;
+    }
+
+    .language-icons1,
+    .language-icons2 {
+        flex-direction: column;
+        width: 10%;
+    }
+}
