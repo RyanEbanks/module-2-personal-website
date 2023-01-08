@@ -21,38 +21,40 @@
       <h1 class>Ryan<span class="e-lio">Ebanks</span> Portfo<span class="e-lio">lio</span></h1>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#home-banner">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about-section">About</a>
         </li>
         <li>
-          <a href="#">Skillset</a>
+          <a href="#skill-section">Skillset</a>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <a href="#project-section">Projects</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact-section">Contact</a>
         </li>
-        <!--i tag containing icons used from fontawesome-->
+        <!--i tag containing icons used from fontawesome & Set icons to open in new tab using target blank-->
         <li>
-          <i class="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/ryan-ebanks-752a92169/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </li>
         <li>
-          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/RyanEbanks" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
         <!--Make this into a button-->
         <li>
-          <a href="#" class="btn">Resume</a>
+          <a href="#" target="_blank" class="btn">Resume</a>
         </li>
       </ul>
     </nav>
   </header>
-
+  <article class="home-banner" id="home-banner">
+    <img src="/assets/images/website-banner.png">
+  </article>
   <section class="about-grid-container">
 
-    <article class="about-child-one">
+    <article class="about-child-one" id="about-section">
       <h1 class="about-title">Who Am I?</h1>
       <p class="about-info">Hi, I'm Ryan Ebanks and I'm a Full-Stack Web Developer in training.
         I have a bachelors degree in computer science which gives me a strong understanding
@@ -71,7 +73,7 @@
   </section>
 
   <!--Skill Container-->
-  <section class="skill-parent-container">
+  <section class="skill-parent-container" id="skill-section">
     <article class="skill-child-container1">
       <h1 class="skill-title">Skillset</h1>
       <p class="skill-info">The Rutgers Coding Bootcamp has fully equipped me with the necessary knowledge and
@@ -198,20 +200,18 @@
   </section><!--Skill Container End-->
 
   <!--Project Container-->
-
-  <article class="project-container">
+  <article class="project-container" id="project-section">
 
     <h2 class="proj-title">Projects</h2>
-    <hr>
     <article class="proj-img-container first-container">
 
       <article class="the-project first-project">
         <a href="https://ryanebanks.github.io/module-1-horiseon-website/" class="projects"><img
-            src="/assets/images/project 1 test.png" alt=""></a>
+            src="/assets/images/project 1 test.png" alt="Horiseon Website"></a>
         <h2 class="img-title">Horiseon Website Project</h2>
         <p class="img-p">Hover for More info</p>
-        <a href="#" class="btn">Github Link</a>
-        <a href="#" class="btn">Live Link</a>
+        <a href="https://github.com/RyanEbanks/module-1-horiseon-website" target="_blank" class="btn">Github Link</a>
+        <a href="https://ryanebanks.github.io/module-1-horiseon-website/" target="_blanks" class="btn">Live Link</a>
         <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
       </article>
 
@@ -221,21 +221,21 @@
 
       <article class="the-project">
         <a href="https://github.com/RyanEbanks/css-cheat-snippets" class="projects"><img
-            src="/assets/images/css-cheat-snippets.PNG" alt=""></a>
+            src="/assets/images/css-cheat-snippets.PNG" alt="CSS Cheat Snippet Website"></a>
         <h2 class="img-title">CSS Cheat Snippet Project</h2>
         <p class="img-p">Hover for More info</p>
-        <a href="#" class="btn">Github Link</a>
+        <a href="https://github.com/RyanEbanks/css-cheat-snippets" target="_blank" class="btn">Github Link</a>
         <a href="#" class="btn">Live Link</a>
         <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
       </article>
 
       <article class="the-project">
         <a href="https://ryanebanks.github.io/prework-study-guide/" class="projects"><img
-            src="/assets/images/pre-work-guide.PNG" alt=""></a>
+            src="/assets/images/pre-work-guide.PNG" alt="Pre Work Study Guide Website"></a>
         <h2 class="img-title">Pre-work Study Guide Project</h2>
         <p class="img-p">Hover for More info</p>
-        <a href="#" class="btn">Github Link</a>
-        <a href="#" class="btn">Live Link</a>
+        <a href="https://github.com/RyanEbanks/prework-study-guide" target="_blank" class="btn">Github Link</a>
+        <a href="https://ryanebanks.github.io/prework-study-guide/" target="_blank" class="btn">Live Link</a>
         <article>&nbsp;</article> <!--Creating a space that cannot be broken-->
       </article>
     </article>
@@ -243,7 +243,7 @@
   </article> <!--Project Container End-->
 
   <!--Contact Container-->
-  <article class="contact-container">
+  <article class="contact-container" id="contact-section">
     <h2 class="contact-title">Get in Touch</h2>
 
     <article class="contact-border">

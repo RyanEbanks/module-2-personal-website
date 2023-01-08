@@ -1,5 +1,10 @@
-/*Adjust all sections to make sure everything is neat and organized and rename certain class names to be more appropriate*/
-/*If you start to forget flexbox, you always have the css game & the YT video in your coding tips and tricks folder*/
+/*Things to add
+1.Resume link
+2.Nav Bar Highlights
+3.My email in contact info
+4.Pop-up Bar
+*/
+
 
 *{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,6 +14,7 @@
 body{
     background-color: var(--white);
 }
+
 :root{
     --dark: #000;
     --blue-highlight-text: #2776EA;
@@ -45,7 +51,7 @@ body {
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    margin-bottom: 5%;
+    border-bottom: var(--border);
 }
 
 .nav-bar ul li {
@@ -73,6 +79,23 @@ body {
     margin-left: 5px;
 }
 
+.btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--light-blue), 0 0 20px var(--blue-shade);
+    outline-color: var(--blue-highlight-text);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--blue-shade);
+}
+/*Home Section*/
+.home-banner {
+    display: flex;
+
+}
+
+.home-banner img{
+    justify-content: center;
+    width: 100%;
+}
 /*Beginning of About Me section*/
 /*Put a border here to look at the size of the div (adjust later)*/
 .about-grid-container {
@@ -101,15 +124,18 @@ body {
 .about-child-two img {
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 .about-info {
     font-size: 1.5rem;
+    text-shadow: 2px 2px 3px var(--border);
 }
 
 .about-title {
     font-size: 2rem;
     color: var(--darker-blue);
+    text-shadow: 2px 2px 3px var(--border);
 }
 
 /*Skillset Section*/
@@ -135,10 +161,13 @@ body {
 .skill-title {
    font-size: 2rem;
    color: var(--white);
+   text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
 .skill-info {
     font-size: 1.5rem;
+    color: var(--border);
+    text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
 .icon-title {
@@ -147,12 +176,13 @@ body {
 
 .language-icons1 {
     display: flex;
-    
+    text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
 .language-icons2 {
     display: flex;
     justify-content: center;
+    text-shadow: 2px 2px 3px var(--blue-shade);
 }
 
 .parent_div{
@@ -161,6 +191,7 @@ body {
     border: 1px solid black;
     align-items: center;
     text-align: center;
+    background: var(--border);
 }
 
 .skill-items {
@@ -176,11 +207,15 @@ body {
     margin: 6% 5% 6% 5%;
 }
 
+
 /*Project Section*/
 .proj-title {
     margin-top: 2%;
     text-align: center;
+    text-shadow: 2px 2px 3px var(--border);
+    color: var(--darker-blue);
 }
+
 .proj-img-container {
     width: 80%;
     display: flex;
@@ -200,8 +235,6 @@ body {
     height: auto;
     width: 400px;
     border-radius: 5px;
-    transition: 1.25s;
-    cursor: pointer;
 }
 
 .the-project {
@@ -221,9 +254,10 @@ body {
     top: 0;
 }
 
-.the-project img:hover {
-    transform: scale(1.3);
-    filter: blur(2.3px);
+.the-project:hover {
+    transition: 1.2s;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .img-p {
@@ -233,16 +267,6 @@ body {
 .img-title, .img-p {
     padding-left: 5px;
 }
-
-/*Giving the hr tag a different color*/
-hr {
-    width: 80%;
-    background-color: var(--blue-shade);
-    border: none;
-    height: 1px;
-}
-
-
 
 /*Contact Section*/
 /*Put a border here to look at the size of the div (adjust later)*/
@@ -262,6 +286,7 @@ hr {
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
+    color: var(--border);
 }
 
 .form-row {
@@ -287,6 +312,10 @@ hr {
 /*Footer*/
 footer {
     background: var(--blue-shade);
-    padding: 2% 0 2% 0;
+    padding: 1% 0 1% 0;
     text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+    text-shadow: 2px 2px 3px var(--darker-blue);
 }
+
