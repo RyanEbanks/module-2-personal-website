@@ -76,24 +76,31 @@ body {
 /*Beginning of About Me section*/
 /*Put a border here to look at the size of the div (adjust later)*/
 .about-grid-container {
-  display: grid;
-  grid-gap: 20px;
-  /*grid-template-columns: 50vw 50vw;
-  grid-auto-rows: minmax(150px, auto);*/
-  grid-template-areas: "a a a a a a a b b c c d d d d d d d";
-  margin-bottom: 5%;
+  display: flex;
 }
 
-.about-child {
+.about-child-one {
+    flex: 60%;
     line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.grid-item-1 {
-   grid-area: b;
+.about-child-two {
+    flex: 40%;
 }
 
-.grid-item-2 {
-    grid-area: c;
+.icon-img {
+    width: 400px;
+    height: auto;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+}
+
+.about-child-two img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-info {
@@ -102,12 +109,7 @@ body {
 
 .about-title {
     font-size: 2rem;
-    color: var(--purple);
-}
-
-.icon-img {
-    width: 400px;
-    height: auto;
+    color: var(--darker-blue);
 }
 
 /*Skillset Section*/
@@ -139,6 +141,9 @@ body {
     font-size: 1.5rem;
 }
 
+.icon-title {
+    color: var(--border);
+}
 
 .language-icons1 {
     display: flex;
