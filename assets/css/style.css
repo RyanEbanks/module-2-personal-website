@@ -207,6 +207,7 @@ header a:hover {
     text-align: center;
     text-shadow: 2px 2px 3px var(--border);
     color: var(--darker-blue);
+    font-size: 2rem;
 }
 
 .proj-img-container {
@@ -321,8 +322,9 @@ header a:hover {
 }
 
 .form-row input {
-    /*setting all the flex-boxes to the same size in the container, since they share the same class name I only need to do it once*/
+/*setting all the flex-boxes to the same size in the container, since they share the same class name I only need to do it once*/
     flex: 1;
+    font-size: 1.2rem;
 }
 
 .contact-button {
@@ -359,7 +361,8 @@ footer {
     .about-info,
     .skill-info,
     .img-p,
-    .icon-title {
+    .icon-title,
+    .form-row input {
         font-size: 0.95rem;
     }
 
@@ -402,7 +405,8 @@ footer {
     .about-info,
     .skill-info,
     .img-p,
-    .icon-title {
+    .icon-title,
+    .form-row input {
         font-size: 0.8rem;
     }
 
