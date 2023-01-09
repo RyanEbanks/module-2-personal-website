@@ -10,7 +10,7 @@ This project given by the rutgers full-stack web development bootcamp entails me
 N/A
 
 ## Usage
-This project will be used to demonstrate my understanding of html and css that I have learned to date.
+This project will be used to demonstrate my skills in the form of a personal portfolio that can be viewed by interviewers.
 
 ## Code
 ![module-2-html](https://user-images.githubusercontent.com/43324378/211226092-f3e88d91-5335-4b2c-b4a7-5cc182d82fb8.gif)
