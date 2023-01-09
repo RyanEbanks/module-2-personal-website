@@ -38,6 +38,7 @@ body {
     width: 100%;
     border-bottom: 1px solid var(--border);
     background: var(--white);
+    z-index: 10;
 }
 
 .nav-bar ul li {
