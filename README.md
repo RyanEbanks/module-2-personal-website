@@ -13,8 +13,8 @@ N/A
 This project will be used to demonstrate my understanding of html and css that I have learned to date.
 
 ## Code
-![module-2-html](https://user-images.githubusercontent.com/43324378/211225960-86dd97a7-480b-4072-97f6-73f3041a1ab7.jpg)
-![module-2-css](https://user-images.githubusercontent.com/43324378/211225963-ec9dca7a-59c6-4d24-b3c8-8b18c891d5de.jpg)
+![module-2-html](https://user-images.githubusercontent.com/43324378/211226092-f3e88d91-5335-4b2c-b4a7-5cc182d82fb8.gif)
+![module-2-css](https://user-images.githubusercontent.com/43324378/211226096-685a8c07-20fe-4d20-9118-ebc1a690a543.gif)
 
 ## Credits
 N/A
