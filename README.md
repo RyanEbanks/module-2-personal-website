@@ -14,7 +14,7 @@ This project will be used to demonstrate my understanding of html and css that I
 
 ## Code
 ![module-2-html](https://user-images.githubusercontent.com/43324378/211226092-f3e88d91-5335-4b2c-b4a7-5cc182d82fb8.gif)
-![module-2-css](https://user-images.githubusercontent.com/43324378/211226096-685a8c07-20fe-4d20-9118-ebc1a690a543.gif)
+![module-2-css](https://user-images.githubusercontent.com/43324378/211226177-edaf5547-2a68-4317-9d7f-da81530bde33.gif)
 
 ## Credits
 N/A
